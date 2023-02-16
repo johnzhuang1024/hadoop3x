@@ -34,7 +34,7 @@ public class FlowDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FlowBean.class);
 
-        FileInputFormat.setInputPaths(job, new Path("D:\\bigdata\\work\\project\\hadoop3x\\input\\phone_data.txt"));
+        FileInputFormat.setInputPaths(job, new Path("D:\\bigdata\\work\\project\\hadoop3x\\input\\inputWriable\\phone_data.txt"));
         FileOutputFormat.setOutputPath(job, new Path("D:\\bigdata\\work\\project\\hadoop3x\\output\\FlowOutput"));
 
         boolean b = job.waitForCompletion(true);
