@@ -1,4 +1,4 @@
-package com.atguigu.mapreduce.writableComparable;
+package com.atguigu.mapreduce.partionerandwritableComparable;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;

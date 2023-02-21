@@ -1,4 +1,4 @@
-package com.atguigu.mapreduce.writableComparable;
+package com.atguigu.mapreduce.partionerandwritableComparable;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -33,8 +33,11 @@ public class FlowDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FlowBean.class);
 
+        job.setPartitionerClass(ProvincePartitioner2.class);
+        job.setNumReduceTasks(5);
+
         FileInputFormat.setInputPaths(job, new Path("D:\\environment\\DataFile\\output\\FlowOutput"));
-        FileOutputFormat.setOutputPath(job, new Path("D:\\environment\\DataFile\\output\\FlowOutput3"));
+        FileOutputFormat.setOutputPath(job, new Path("D:\\environment\\DataFile\\output\\FlowOutput4"));
 
         boolean b = job.waitForCompletion(true);
         System.exit(b ? 0 : 1);
