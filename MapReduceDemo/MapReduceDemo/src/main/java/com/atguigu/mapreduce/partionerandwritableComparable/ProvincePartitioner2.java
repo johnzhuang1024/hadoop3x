@@ -3,7 +3,12 @@ package com.atguigu.mapreduce.partionerandwritableComparable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 
-
+/**
+ * @author JohnZhuang
+ * @version 1.0
+ * @description: TODO
+ * @date 2023/2/22 9:51
+ */
 public class ProvincePartitioner2 extends Partitioner<FlowBean, Text> {
 
 

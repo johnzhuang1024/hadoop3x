@@ -7,6 +7,12 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
+/**
+ * @author JohnZhuang
+ * @version 1.0
+ * @description: TODO
+ * @date 2023/2/22 9:51
+ */
 public class LogReducer extends Reducer<Text, NullWritable, Text, NullWritable> {
     @Override
     protected void reduce(Text key, Iterable<NullWritable> values, Reducer<Text, NullWritable, Text, NullWritable>.Context context) throws IOException, InterruptedException {

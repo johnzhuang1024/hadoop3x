@@ -10,6 +10,12 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.io.IOException;
 
+/**
+ * @author JohnZhuang
+ * @version 1.0
+ * @description: TODO
+ * @date 2023/2/22 9:51
+ */
 public class LogOutputFormat extends FileOutputFormat<Text, NullWritable> {
 
     @Override

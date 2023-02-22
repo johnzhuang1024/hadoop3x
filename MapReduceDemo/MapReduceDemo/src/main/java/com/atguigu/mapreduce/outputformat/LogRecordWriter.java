@@ -11,6 +11,12 @@ import org.apache.hadoop.mapreduce.TaskAttemptContext;
 
 import java.io.IOException;
 
+/**
+ * @author JohnZhuang
+ * @version 1.0
+ * @description: TODO
+ * @date 2023/2/22 9:51
+ */
 public class LogRecordWriter extends RecordWriter<Text, NullWritable> {
     private FSDataOutputStream atguiguOut;
     private FSDataOutputStream otherOut;

@@ -6,6 +6,12 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
+/**
+ * @author JohnZhuang
+ * @version 1.0
+ * @description: TODO
+ * @date 2023/2/22 9:51
+ */
 public class WordCountCombiner extends Reducer<Text, IntWritable, Text, IntWritable> {
 
     private IntWritable outV = new IntWritable();

@@ -13,6 +13,12 @@ import java.io.IOException;
  * @Version: 1.0
  */
 
+/**
+ * @author JohnZhuang
+ * @version 1.0
+ * @description: TODO
+ * @date 2023/2/22 9:51
+ */
 //1 implements继承WritableComparable接口
 public class FlowBean implements WritableComparable<FlowBean> {
 

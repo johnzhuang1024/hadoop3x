@@ -58,12 +58,13 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "fileTemplates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.mapreduce.mapJoin" />
       <recent name="com.atguigu.mapreduce.outputformat" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -74,13 +75,39 @@
       <recent name="D:\environment\Code\IDEA_WorkPlace\hadoop3x\MapReduceDemo\MapReduceDemo\src\main\java\com\atguigu\mapreduce\partitioner" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LogDriver">
+  <component name="RunManager" selected="Application.MapJoinDriver">
     <configuration name="LogDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.mapreduce.combiner.LogDriver" />
       <module name="MapReduceDemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.mapreduce.combiner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapJoinDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapreduce.mapJoin.MapJoinDriver" />
+      <module name="MapReduceDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.mapreduce.mapJoin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapreduce.reduceJoin.TableDriver" />
+      <module name="MapReduceDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.mapreduce.reduceJoin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,38 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.atguigu.mapreduce.partionerandwritableComparable.FlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapreduce.partionerandwritableComparable.FlowDriver" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapreduce.test" />
       <module name="MapReduceDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.mapreduce.partionerandwritableComparable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.atguigu.mapreduce.writableComparable.FlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapreduce.writableComparable.FlowDriver" />
-      <module name="MapReduceDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.mapreduce.writableComparable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.atguigu.mapreduce.writable.FlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapreduce.writable.FlowDriver" />
-      <module name="MapReduceDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.mapreduce.writable.*" />
+          <option name="PATTERN" value="com.atguigu.mapreduce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapJoinDriver" />
+        <item itemvalue="Application.TableDriver" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.LogDriver" />
         <item itemvalue="Application.WordCountDriver" />
-        <item itemvalue="Application.com.atguigu.mapreduce.partionerandwritableComparable.FlowDriver" />
-        <item itemvalue="Application.com.atguigu.mapreduce.writableComparable.FlowDriver" />
-        <item itemvalue="Application.com.atguigu.mapreduce.writable.FlowDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +169,8 @@
       <workItem from="1676962124784" duration="288000" />
       <workItem from="1676962429357" duration="9000" />
       <workItem from="1676962593894" duration="10000" />
-      <workItem from="1676962807121" duration="8378000" />
+      <workItem from="1676962807121" duration="9092000" />
+      <workItem from="1677029258958" duration="8988000" />
     </task>
     <servers />
   </component>
