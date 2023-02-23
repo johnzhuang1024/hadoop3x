@@ -4,6 +4,9 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.compress.BZip2Codec;
+import org.apache.hadoop.io.compress.CompressionCodec;
+import org.apache.hadoop.io.compress.SnappyCodec;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -35,6 +38,7 @@ public class MapJoinDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(NullWritable.class);
 
+
         // 加载缓存数据
         job.addCacheFile(new URI("file:///D:/environment/DataFile/input/tablecache/pd.txt"));
         // Map端Join的逻辑不需要Reduce阶段，设置reduceTask数量为0
@@ -42,7 +46,7 @@ public class MapJoinDriver {
 
         // 6 设置输入输出路径
         FileInputFormat.setInputPaths(job, new Path("D:\\environment\\DataFile\\input\\inputtable"));
-        FileOutputFormat.setOutputPath(job, new Path("D:\\environment\\DataFile\\output\\outputtable2"));
+        FileOutputFormat.setOutputPath(job, new Path("D:\\environment\\DataFile\\output\\outputtable3"));
         // 7 提交
         boolean b = job.waitForCompletion(true);
         System.exit(b ? 0 : 1);
